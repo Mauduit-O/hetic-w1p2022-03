@@ -2,7 +2,7 @@
 
 Projet Swarovski
 
-hetic-w1p2022-03.netlify.com
+jewelswarovski.netlify.com
 
 Hanna Achab
 
