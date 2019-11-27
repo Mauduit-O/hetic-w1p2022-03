@@ -1,6 +1,12 @@
-
+@font-face{
+  font-family:"Century Gothic";
+  src: url("font/GOTHIC.woff") format("woff");
+  font-weight:normal;
+  font-style:normal;
+}
   body {
     background-color: rgb(245, 245, 245);
+    font-family:"Century", sans-serif;
   }
   div{
       margin-bottom:10px;
