@@ -1,0 +1,32 @@
+
+  body {
+    background-color: rgb(245, 245, 245);
+  }
+  div{
+      margin-bottom:10px;
+  }
+  label{
+      display: inline-block;
+      width:100px;
+      text-align:right;
+      margin-right:5px;
+  }
+  :required:valid{
+      border-color: green;
+  }
+  footer {
+    margin:0;
+    border: solid black;
+    border-width: 0.5px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .thanks{
+      margin-top:40px;
+  }
