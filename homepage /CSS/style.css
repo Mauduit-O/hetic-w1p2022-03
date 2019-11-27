@@ -12,7 +12,7 @@ header {
 }
 header h1 {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 4%;
 }
 
 .print {
@@ -27,7 +27,7 @@ header h1 {
   width: 40px;
   position: fixed;
   float: left;
-  margin-right: 10px;
+  margin-left: 15px;
   top: 5%;
   cursor: pointer;
 }
