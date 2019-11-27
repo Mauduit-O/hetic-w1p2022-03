@@ -2,6 +2,8 @@
 
 Projet Swarovski
 
+jewelswarovski.netlify.com
+
 Hanna Achab
 
 Oum-El-Khaïre Mauduit
