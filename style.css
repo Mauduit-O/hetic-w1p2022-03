@@ -9,17 +9,11 @@ header {
   position: fixed;
   width: 100%;
   color: black;
+  top: ;
 }
 header h1 {
   text-align: center;
   margin-top: 4%;
-}
-
-.print {
-  margin-top: 12%;
-  top: 10px;
-  margin-left: 20%;
-  margin-right: 20%;
 }
 
 .toggle_btn {
@@ -30,6 +24,7 @@ header h1 {
   margin-left: 15px;
   top: 5%;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .toggle_btn span {
@@ -59,6 +54,16 @@ header h1 {
   position: absolute;
   top: 10px;
   left: 0;
+}
+
+nav.is-open + .open-menu span {
+  background-color: transparent;
+}
+nav.is-open + .open-menu span::before {
+  transform: rotate(45deg) translate(20px, 6px);
+}
+nav.is-open + .open-menu span::after {
+  transform: rotate(-45deg) translate(8px, 6px);
 }
 
 nav {
@@ -113,6 +118,13 @@ p {
   margin-right: 20%;
   text-align: center;
   font-size: 26px;
+}
+
+.print {
+  margin-top: 12%;
+  top: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .operation {
