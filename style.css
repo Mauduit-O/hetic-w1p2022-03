@@ -4,22 +4,29 @@
   font-weight: normal;
   font-style: normal;
 }
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
   font-family: "Baskerville";
 }
+
 body {
   font-family: "Century", sans-serif;
 }
+
 header {
   background-color: white;
   text-align: center;
   position: fixed;
+  top: 0;
+  height: 10vh;
   width: 100%;
   color: black;
+  box-shadow: 0px 3px 3px grey;
 }
+
 header h1 {
   text-align: center;
   margin-top: 20px;
@@ -74,9 +81,11 @@ header h1 {
 nav.is-open + .open-menu span {
   background-color: transparent;
 }
+
 nav.is-open + .open-menu span::before {
   transform: rotate(45deg) translate(20px, 6px);
 }
+
 nav.is-open + .open-menu span::after {
   transform: rotate(-45deg) translate(8px, 6px);
 }
@@ -92,9 +101,11 @@ nav {
   transform: translateX(-100%);
   transition: transform 0.2s;
 }
+
 nav.is-open {
   transform: none;
 }
+
 nav a {
   color: black;
   text-decoration: none;
@@ -135,6 +146,7 @@ p {
   text-align: center;
   font-size: 28px;
 }
+
 .commander {
   border: 5px solid;
   border-color: rgb(227, 82, 82);
@@ -146,10 +158,12 @@ p {
   margin-left: 3%;
   margin-bottom: 50px;
 }
+
 .operation {
   margin-left: 3%;
   margin-right: 3%;
 }
+
 .steps {
   text-decoration: none;
   color: white;
@@ -160,25 +174,31 @@ p {
   background-color: #bba45b;
   height: 200px;
 }
+
 .printed {
   margin-top: 10px;
   background-color: #bf8f86;
   height: 200px;
 }
+
 .connected {
   margin-top: 10px;
   background-color: #88aea0;
   height: 200px;
 }
+
 .txt1 {
   color: #bba45b;
 }
+
 .txt2 {
   color: #bf8f86;
 }
+
 .txt3 {
   color: #88aea0;
 }
+
 .swarovski {
   margin-left: 3%;
   margin-right: 3%;
@@ -189,11 +209,13 @@ article a {
   text-decoration: none;
   color: white;
 }
+
 article h2 {
   text-align: center;
   font-size: 30px;
   padding-top: 80px;
 }
+
 .first {
   background-color: #082852;
   height: 200px;
@@ -202,10 +224,12 @@ article h2 {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
+
 .first:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.2);
 }
+
 .second {
   margin-top: 10px;
   background-color: #a9a9a9;
@@ -215,10 +239,12 @@ article h2 {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
+
 .second:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.2);
 }
+
 footer {
   border: solid black;
   border-width: 0.5px;
@@ -228,22 +254,25 @@ footer {
   padding: 20px;
   margin-top: 10px;
 }
+
 .logo {
-  margin: 10px;
-  width: 40px;
-  height: 40px;
+  margin: 5px;
+  width: 25px;
+  height: 25px;
   -webkit-filter: grayscale(0) blur(0px);
   filter: grayscale(0) blur(0px);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+
 .logo:hover {
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
+
 @media (min-width: 800px) {
   .print {
     max-width: 900px;
@@ -251,44 +280,54 @@ footer {
     margin-right: 25%;
     margin-left: 25%;
   }
+
   p {
     margin-left: 15%;
     margin-right: 15%;
   }
+
   .steps {
     margin-left: 0%;
     margin-right: 0%;
     font-size: 170%;
   }
+
   .commander {
     margin-left: 20%;
   }
+
   .operation {
     display: flex;
     margin-left: 15%;
     margin-right: 15%;
   }
+
   .imagine {
     width: 30%;
   }
+
   .printed {
     margin-top: 0px;
     margin-left: 10px;
     width: 30%;
   }
+
   .connected {
     margin-top: 0px;
     margin-left: 10px;
     width: 30%;
   }
+
   .swarovski {
     display: flex;
     margin-left: 15%;
     margin-right: 15%;
   }
+
   .first {
     width: 50%;
   }
+
   .second {
     margin-top: 0px;
     margin-left: 30px;
