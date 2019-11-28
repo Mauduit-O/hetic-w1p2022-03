@@ -1,19 +1,10 @@
-@font-face {
-  font-family: "Century Gothic";
-  src: url("font/GOTHIC.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: "Baskerville";
 }
-body {
-  background-color: rgb(7, 47, 85);
-  font-family: "Century", sans-serif;
-}
-
 header {
   background-color: white;
   text-align: center;
