@@ -8,6 +8,7 @@
   src: url("font/GOTHIC.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-family: "Baskerville";
 }
 body {
   background-color: rgb(7, 47, 85);
