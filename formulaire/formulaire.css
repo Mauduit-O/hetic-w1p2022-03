@@ -8,6 +8,11 @@ body {
   background-color: rgb(245, 245, 245);
   font-family: "Century", sans-serif;
 }
+
+main {
+  min-height: calc(100vh - 104px);
+}
+
 div {
   margin-bottom: 10px;
 }
