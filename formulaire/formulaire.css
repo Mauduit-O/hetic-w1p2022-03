@@ -4,22 +4,35 @@
   font-weight: normal;
   font-style: normal;
 }
+
 body {
   background-color: rgb(245, 245, 245);
   font-family: "Century", sans-serif;
 }
+
 div {
   margin-bottom: 10px;
 }
+
 label {
   display: inline-block;
   width: 100px;
   text-align: right;
   margin-right: 5px;
 }
+
+:checked + label {
+  color: green;
+}
+
 :required:valid {
   border-color: green;
 }
+
+:required:invalid {
+  border-color: red;
+}
+
 footer {
   margin: 0;
   border: solid black;
@@ -29,22 +42,12 @@ footer {
   justify-content: flex-end;
   padding: 20px;
 }
+
 .logo {
-  margin: 20px;
   width: 50px;
   height: 50px;
-  -webkit-filter: grayscale(0) blur(0px);
-  filter: grayscale(0) blur(0px);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
-.logo:hover {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
+
 .thanks {
   margin-top: 40px;
 }
