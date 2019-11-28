@@ -10,14 +10,131 @@
   font-style: normal;
 }
 body {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(7, 47, 85);
   font-family: "Century", sans-serif;
 }
+
+header {
+  background-color: white;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  color: black;
+}
+header h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 250%;
+}
+
+.print {
+  margin-top: 25%;
+  top: 10px;
+}
+
+.toggle_btn {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  float: left;
+  margin-left: 15px;
+  top: 3%;
+  cursor: pointer;
+  background-color: white;
+}
+
+.toggle_btn span {
+  height: 3px;
+  background-color: black;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+.toggle_btn span:before {
+  content: "";
+  height: 3px;
+  background-color: black;
+  width: 100%;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+.toggle_btn span:after {
+  content: "";
+  height: 3px;
+  background-color: black;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+nav.is-open + .open-menu span {
+  background-color: transparent;
+}
+nav.is-open + .open-menu span::before {
+  transform: rotate(45deg) translate(20px, 6px);
+}
+nav.is-open + .open-menu span::after {
+  transform: rotate(-45deg) translate(8px, 6px);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  background: white;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform 0.2s;
+}
+nav.is-open {
+  transform: none;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  padding-top: 40px;
+  list-style: none;
+  flex-grow: 1;
+  margin-right: 15px;
+  font-size: 26px;
+}
+
+li {
+  background-color: white;
+  text-align: center;
+  padding: 30px;
+  height: 30%;
+}
+
+.open-menu {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.toggle_btn:before {
+  top: 10px;
+}
+
+.toggle_btn:after {
+  top: 17px;
+}
+
 section {
-  border: solid black;
+  border: solid white;
   border-width: 0.5px;
   margin: 30px;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
+  border-radius: 10px;
 }
 h1 {
   font-size: 44px;
