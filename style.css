@@ -148,6 +148,7 @@ p {
   background-color: white;
   padding: 10px;
   font-size: 20px;
+  text-align: right;
   margin-left: 3%;
   margin-bottom: 50px;
   -webkit-transform: scale(1);
@@ -274,7 +275,7 @@ footer {
     font-size: 170%;
   }
   .commander {
-    margin-left: 15%;
+    margin-left: 20%;
   }
   .operation {
     display: flex;
