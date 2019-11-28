@@ -115,14 +115,40 @@ p {
   font-size: 26px;
 }
 
+.operation {
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 100%;
+}
+.steps {
+  text-decoration: none;
+  color: white;
+}
+
+.imagine {
+  background-color: #082852;
+  height: 200px;
+}
+.printed {
+  margin-top: 3px;
+  background-color: #082852;
+  height: 200px;
+}
+.connected {
+  margin-top: 3px;
+  background-color: #082852;
+  height: 200px;
+}
+
 .swarovski {
   margin-left: 20%;
   margin-right: 20%;
   height: 100%;
 }
+
 article a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .first {
@@ -144,18 +170,6 @@ footer {
   padding: 20px;
 }
 .logo {
-  margin: 20px;
   width: 50px;
   height: 50px;
-  -webkit-filter: grayscale(0) blur(0px);
-  filter: grayscale(0) blur(0px);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-.logo:hover {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
 }
