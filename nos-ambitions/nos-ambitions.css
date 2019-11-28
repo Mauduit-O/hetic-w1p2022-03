@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Century Gothic";
-  src: url("font/GOTHIC.woff") format("woff");
+  font-family: "Baskerville";
+  src: url("Font/Baskerville.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -8,10 +8,11 @@
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: "Baskerville";
 }
 body {
   background-color: rgb(245, 245, 245);
-  font-family: "Century", sans-serif;
+  font-family: "Baskerville", sans-serif;
 }
 section {
   border: solid black;

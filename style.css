@@ -1,13 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
 @font-face {
   font-family: "Century Gothic";
   src: url("font/GOTHIC.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Baskerville";
+}
+body {
+  font-family: "Century", sans-serif;
 }
 header {
   background-color: white;
@@ -132,21 +136,28 @@ p {
 }
 
 .imagine {
-  background-color: #082852;
+  background-color: #bba45b;
   height: 200px;
-  width: 100%;
 }
 .printed {
   margin-top: 10px;
-  background-color: #082852;
+  background-color: #bf8f86;
   height: 200px;
 }
 .connected {
   margin-top: 10px;
-  background-color: #082852;
+  background-color: #88aea0;
   height: 200px;
 }
-
+.txt1 {
+  color: #bba45b;
+}
+.txt2 {
+  color: #bf8f86;
+}
+.txt3 {
+  color: #88aea0;
+}
 .swarovski {
   margin-left: 3%;
   margin-right: 3%;
@@ -165,11 +176,27 @@ article h2 {
 .first {
   background-color: #082852;
   height: 200px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.first:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.2);
 }
 .second {
   margin-top: 10px;
   background-color: #a9a9a9;
   height: 200px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.second:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.2);
 }
 footer {
   border: solid black;
@@ -210,6 +237,7 @@ footer {
   .steps {
     margin-left: 0%;
     margin-right: 0%;
+    font-size: 150%;
   }
   .operation {
     display: flex;
@@ -217,19 +245,17 @@ footer {
     margin-right: 15%;
   }
   .imagine {
-    flex-grow: 1;
+    width: 30%;
   }
   .printed {
     margin-top: 0px;
     margin-left: 10px;
-    flex-grow: 2;
-    padding-right: 5%;
-    padding-left: 5%;
+    width: 30%;
   }
   .connected {
     margin-top: 0px;
     margin-left: 10px;
-    flex-grow: 1;
+    width: 30%;
   }
   .swarovski {
     display: flex;
@@ -237,11 +263,11 @@ footer {
     margin-right: 15%;
   }
   .first {
-    flex-grow: 1;
+    width: 50%;
   }
   .second {
     margin-top: 0px;
-    margin-left: 10px;
-    flex-grow: 1;
+    margin-left: 30px;
+    width: 50%;
   }
 }
