@@ -71,6 +71,16 @@ header h1 {
   left: 0;
 }
 
+nav.is-open + .open-menu span {
+  background-color: transparent;
+}
+nav.is-open + .open-menu span::before {
+  transform: rotate(45deg) translate(20px, 6px);
+}
+nav.is-open + .open-menu span::after {
+  transform: rotate(-45deg) translate(8px, 6px);
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -95,6 +105,7 @@ ul {
   list-style: none;
   flex-grow: 1;
   margin-right: 15px;
+  font-size: 26px;
 }
 
 li {
@@ -106,7 +117,7 @@ li {
 
 .open-menu {
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 
 .toggle_btn:before {
