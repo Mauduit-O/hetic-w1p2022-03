@@ -196,3 +196,52 @@ footer {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
+@media (min-width: 800px) {
+  .print {
+    max-width: 900px;
+    margin-top: 5%;
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+  p {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .steps {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .operation {
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .imagine {
+    flex-grow: 1;
+  }
+  .printed {
+    margin-top: 0px;
+    margin-left: 10px;
+    flex-grow: 2;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .connected {
+    margin-top: 0px;
+    margin-left: 10px;
+    flex-grow: 1;
+  }
+  .swarovski {
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .first {
+    flex-grow: 1;
+  }
+  .second {
+    margin-top: 0px;
+    margin-left: 10px;
+    flex-grow: 1;
+  }
+}
