@@ -13,13 +13,18 @@ body {
   background-color: rgb(245, 245, 245);
   font-family: "Century", sans-serif;
 }
+
 header {
   background-color: white;
   text-align: center;
   position: fixed;
+  top: 0;
+  height: 10vh;
   width: 100%;
   color: black;
+  box-shadow: 0px 3px 3px grey;
 }
+
 header h1 {
   text-align: center;
   margin-top: 20px;
@@ -123,6 +128,14 @@ li {
   top: 17px;
 }
 
+main {
+  min-height: calc(90vh - 104px);
+}
+
+form {
+  margin-top: 150px;
+}
+
 div {
   margin-bottom: 10px;
 }
@@ -134,16 +147,16 @@ label {
   margin-right: 5px;
 }
 
-:checked + label {
-  color: green;
-}
-
 :required:valid {
   border-color: green;
 }
 
 :required:invalid {
   border-color: red;
+}
+
+:checked + label {
+  color: green;
 }
 
 footer {
@@ -153,21 +166,21 @@ footer {
   background-color: white;
   display: flex;
   justify-content: flex-end;
-  padding: 20px;
+  padding: 10px;
 }
 
 .logo {
-  margin: 10px;
-  width: 40px;
-  height: 40px;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
   -webkit-filter: grayscale(0) blur(0px);
   filter: grayscale(0) blur(0px);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .logo:hover {
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
