@@ -1,21 +1,31 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
 @font-face {
   font-family: "Century Gothic";
   src: url("font/GOTHIC.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Baskerville";
+}
+body {
+  font-family: "Century", sans-serif;
+}
+
 header {
   background-color: white;
   text-align: center;
   position: fixed;
+  top: 0;
+  height: 10vh;
   width: 100%;
   color: black;
+  box-shadow: 0px 3px 3px grey;
 }
+
 header h1 {
   text-align: center;
   margin-top: 20px;
@@ -67,6 +77,16 @@ header h1 {
   left: 0;
 }
 
+nav.is-open + .open-menu span {
+  background-color: transparent;
+}
+nav.is-open + .open-menu span::before {
+  transform: rotate(45deg) translate(20px, 6px);
+}
+nav.is-open + .open-menu span::after {
+  transform: rotate(-45deg) translate(8px, 6px);
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -91,6 +111,7 @@ ul {
   list-style: none;
   flex-grow: 1;
   margin-right: 15px;
+  font-size: 26px;
 }
 
 li {
@@ -102,7 +123,7 @@ li {
 
 .open-menu {
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 
 .toggle_btn:before {
@@ -118,9 +139,26 @@ p {
   margin-left: 0%;
   margin-right: 0%;
   text-align: center;
-  font-size: 20px;
+  font-size: 28px;
 }
-
+.commander {
+  border: 5px solid;
+  border-color: rgb(227, 82, 82);
+  border-radius: 6px;
+  background-color: white;
+  padding: 10px;
+  font-size: 20px;
+  margin-left: 3%;
+  margin-bottom: 50px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.commander:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.2);
+}
 .operation {
   margin-left: 3%;
   margin-right: 3%;
@@ -128,25 +166,32 @@ p {
 .steps {
   text-decoration: none;
   color: white;
-  font-size: 26px;
+  font-size: 30px;
 }
 
 .imagine {
-  background-color: #082852;
+  background-color: #bba45b;
   height: 200px;
-  width: 100%;
 }
 .printed {
   margin-top: 10px;
-  background-color: #082852;
+  background-color: #bf8f86;
   height: 200px;
 }
 .connected {
   margin-top: 10px;
-  background-color: #082852;
+  background-color: #88aea0;
   height: 200px;
 }
-
+.txt1 {
+  color: #bba45b;
+}
+.txt2 {
+  color: #bf8f86;
+}
+.txt3 {
+  color: #88aea0;
+}
 .swarovski {
   margin-left: 3%;
   margin-right: 3%;
@@ -165,11 +210,27 @@ article h2 {
 .first {
   background-color: #082852;
   height: 200px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.first:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.2);
 }
 .second {
   margin-top: 10px;
   background-color: #a9a9a9;
   height: 200px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.second:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.2);
 }
 footer {
   border: solid black;
@@ -195,4 +256,55 @@ footer {
   border-radius: 50%;
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
+}
+@media (min-width: 800px) {
+  .print {
+    max-width: 900px;
+    margin-top: 5%;
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+  p {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .steps {
+    margin-left: 0%;
+    margin-right: 0%;
+    font-size: 170%;
+  }
+  .commander {
+    margin-left: 15%;
+  }
+  .operation {
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .imagine {
+    width: 30%;
+  }
+  .printed {
+    margin-top: 0px;
+    margin-left: 10px;
+    width: 30%;
+  }
+  .connected {
+    margin-top: 0px;
+    margin-left: 10px;
+    width: 30%;
+  }
+  .swarovski {
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .first {
+    width: 50%;
+  }
+  .second {
+    margin-top: 0px;
+    margin-left: 30px;
+    width: 50%;
+  }
 }

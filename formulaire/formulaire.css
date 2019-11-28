@@ -14,6 +14,128 @@ body {
   font-family: "Century", sans-serif;
 }
 
+header {
+  background-color: white;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  width: 100%;
+  color: black;
+  box-shadow: 0px 3px 3px grey;
+}
+
+header h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 250%;
+}
+
+.toggle_btn {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  float: left;
+  margin-left: 15px;
+  top: 3%;
+  cursor: pointer;
+  background-color: white;
+}
+
+.toggle_btn span {
+  height: 3px;
+  background-color: black;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+.toggle_btn span:before {
+  content: "";
+  height: 3px;
+  background-color: black;
+  width: 100%;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+.toggle_btn span:after {
+  content: "";
+  height: 3px;
+  background-color: black;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+nav.is-open + .open-menu span {
+  background-color: transparent;
+}
+nav.is-open + .open-menu span::before {
+  transform: rotate(45deg) translate(20px, 6px);
+}
+nav.is-open + .open-menu span::after {
+  transform: rotate(-45deg) translate(8px, 6px);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  background: white;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform 0.2s;
+}
+nav.is-open {
+  transform: none;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  padding-top: 40px;
+  list-style: none;
+  flex-grow: 1;
+  margin-right: 15px;
+  font-size: 26px;
+}
+
+li {
+  background-color: white;
+  text-align: center;
+  padding: 30px;
+  height: 30%;
+}
+
+.open-menu {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.toggle_btn:before {
+  top: 10px;
+}
+
+.toggle_btn:after {
+  top: 17px;
+}
+
+main {
+  min-height: calc(90vh - 104px);
+}
+
+form {
+  margin-top: 150px;
+}
+
 div {
   margin-bottom: 10px;
 }
@@ -25,16 +147,16 @@ label {
   margin-right: 5px;
 }
 
-:checked + label {
-  color: green;
-}
-
 :required:valid {
   border-color: green;
 }
 
 :required:invalid {
   border-color: red;
+}
+
+:checked + label {
+  color: green;
 }
 
 footer {
@@ -44,12 +166,24 @@ footer {
   background-color: white;
   display: flex;
   justify-content: flex-end;
-  padding: 20px;
+  padding: 10px;
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  -webkit-filter: grayscale(0) blur(0px);
+  filter: grayscale(0) blur(0px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.logo:hover {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .thanks {
