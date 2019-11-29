@@ -131,9 +131,15 @@ main {
   min-height: calc(90vh - 104px);
 }
 
-form {
+.price {
   margin-top: 150px;
+  margin-left: 55px;
+}
+
+form {
+  margin-top: 50px;
   margin-left: 30px;
+  border-width: 4px 1.25em;
 }
 
 div {
